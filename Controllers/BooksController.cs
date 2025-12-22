@@ -1,6 +1,7 @@
 ﻿using LibraryManagementApi.Model;
 using LibraryManagementApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace LibraryManagementApi.Controllers
 {
@@ -15,6 +16,7 @@ namespace LibraryManagementApi.Controllers
         }
 
         [HttpGet]
+        [EnableRateLimiting("FixedWindowPolicy")]
         public async Task<IActionResult> GetAllBooks(string? author, string? genre)
         {
             var books = await _bookService.GetAllBooksAsync(author, genre);
