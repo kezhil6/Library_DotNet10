@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Library.Staff.Api.DbFirst.Controllers.StaffsController",
+    "Method": "GetAllStaffs",
+    "RelativePath": "api/v1/Staffs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library.Staff.Api.DbFirst.Controllers.StaffsController",
+    "Method": "AddStaff",
+    "RelativePath": "api/v1/Staffs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library.Staff.Api.DbFirst.DTOs.StaffDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

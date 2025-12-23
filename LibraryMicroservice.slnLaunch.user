@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\Library.Books.Api.CodeFirst\Library.Books.Api.CodeFirst.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\Library.Staff.Api.DbFirst\Library.Staff.Api.DbFirst.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
