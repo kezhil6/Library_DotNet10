@@ -1,5 +1,5 @@
-﻿using LibraryManagementApi.Model;
-using LibraryManagementApi.Repositories;
+﻿using Library.Books.Core.Entities;
+using Library.Books.Core.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 
@@ -9,8 +9,8 @@ namespace LibraryManagementApi.Controllers
     [Route("api/v1/[controller]")]
     public class BooksController : ControllerBase
     {
-        private readonly IBookService _bookService;
-        public BooksController(IBookService bookService)
+        private readonly IBookRepository _bookService;
+        public BooksController(IBookRepository bookService)
         {
             _bookService = bookService;
         }

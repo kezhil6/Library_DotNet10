@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Books.Core\Library.Books.Core.csproj" />
+    <ProjectReference Include="..\Library.Books.Infrastructure\Library.Books.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

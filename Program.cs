@@ -1,5 +1,6 @@
-using LibraryManagementApi.Data;
-using LibraryManagementApi.Repositories;
+using Library.Books.Core.Interfaces.Repositories;
+using Library.Books.Infrastructure.Data;
+using Library.Books.Infrastructure.Repositories;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.RateLimiting;
@@ -19,7 +20,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 builder.Services.AddDbContext<BooksContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BooksDb")));
-builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 //Add rate limiting
 builder.Services.AddRateLimiter(options =>
