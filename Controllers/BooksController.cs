@@ -3,7 +3,7 @@ using Library.Books.Core.Interfaces.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 
-namespace LibraryManagementApi.Controllers
+namespace Library.Books.Api.CodeFirst.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
